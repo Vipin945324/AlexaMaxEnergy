@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProductsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bg_splash"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Products"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_800oil"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="800 ml"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹360"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_900oil"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="900 ml"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹431"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_1loil"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 L"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹481"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_3_5loil"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3.5 L"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹1540"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_3_5loil1"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3.5 L"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹1540"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_7_5loil"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Oil"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7.5 L"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹3340"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yellow Grease"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500 gm"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹190"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_1kgwhit"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yellow Grease"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 kg"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹360"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Red Grease"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500 gm"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹210"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    android:clickable="true"
+                    app:cardMaxElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/alexa_1kgred"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alexa Max Plus"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Red Grease"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 kg"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerVertical="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="textEnd"
+                                android:text="₹380"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#2979FF"
+                                style="?attr/borderlessButtonStyle"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

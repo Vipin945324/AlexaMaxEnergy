@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fragment_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/slideImage"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginVertical="15dp"
+                ></androidx.viewpager2.widget.ViewPager2>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.8"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Welcome To,"
+                                android:textAlignment="textStart"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/text_light"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/acme"
+                                android:text="ALEXA MAX"
+                                android:textColor="@color/text_color"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/acme"
+                                android:text="EXNRGY PVT LTD"
+                                android:textColor="@color/bg_splash"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logo"
+                            android:layout_weight="1.2"
+                            android:scaleType="centerCrop"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/bg_splash"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat alias dolorum, similique labore provident quam voluptate expedita, cupiditate incidunt ipsam doloribus ad laboriosam aut aliquid animi sed blanditiis"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_dark_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Our Products"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/bg_splash"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:cardCornerRadius="250dp"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/product_type1"
+                                    android:scaleType="fitXY"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:text="Engine Oil"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:cardCornerRadius="250dp"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/slider4"
+                                    android:scaleType="fitXY"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:text="Grease"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/bg_splash"
+                        />
+
+                    <Button
+                        android:id="@+id/viewAllProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Products"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/bg_splash"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bg_splash"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Happy Customers"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="5dp"
+                                app:cardUseCompatPadding="true"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="8dp"
+                                    android:layout_marginTop="25dp"
+                                    android:gravity="center"
+                                    >
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circule_star"
+                                        android:src="@drawable/profile"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:maxLines="5"
+                                        android:text="Far far away, behind the word mountains, far from the countries Vokalia an Consonantia, there live the blind texts."
+                                        android:textAlignment="center"
+                                        android:textColor="@color/text_dark_light"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:text="Customer"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:textColor="#24282c"
+                                        android:textSize="18dp" />
+
+
+                                </LinearLayout>
+
+
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circule_star"
+                            android:src="@drawable/star"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="5dp"
+                                android:backgroundTint="#24282c"
+                                app:cardUseCompatPadding="true"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="8dp"
+                                    android:layout_marginTop="25dp"
+                                    android:gravity="center"
+                                    >
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circule_star"
+                                        android:src="@drawable/profile"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:maxLines="5"
+                                        android:text="Far far away, behind the word mountains, far from the countries Vokalia an Consonantia, there live the blind texts."
+                                        android:textAlignment="center"
+                                        android:textColor="#e6e8ee"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:text="Customer"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:textColor="@color/white"
+                                        android:textSize="18dp" />
+
+
+                                </LinearLayout>
+
+
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circule_star"
+                            android:src="@drawable/star"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="5dp"
+                                app:cardUseCompatPadding="true"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="8dp"
+                                    android:layout_marginTop="25dp"
+                                    android:gravity="center"
+                                    >
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circule_star"
+                                        android:src="@drawable/profile"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:maxLines="5"
+                                        android:text="Far far away, behind the word mountains, far from the countries Vokalia an Consonantia, there live the blind texts."
+                                        android:textAlignment="center"
+                                        android:textColor="@color/text_dark_light"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:text="Customer"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:textColor="#24282c"
+                                        android:textSize="18dp" />
+
+
+                                </LinearLayout>
+
+
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circule_star"
+                            android:src="@drawable/star"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            >
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="5dp"
+                                android:backgroundTint="#24282c"
+                                app:cardUseCompatPadding="true"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="8dp"
+                                    android:layout_marginTop="25dp"
+                                    android:gravity="center"
+                                    >
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circule_star"
+                                        android:src="@drawable/profile"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:maxLines="5"
+                                        android:text="Far far away, behind the word mountains, far from the countries Vokalia an Consonantia, there live the blind texts."
+                                        android:textAlignment="center"
+                                        android:textColor="#e6e8ee"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:text="Customer"
+                                        android:fontFamily="sans-serif-condensed-medium"
+                                        android:textColor="@color/white"
+                                        android:textSize="18dp" />
+
+
+                                </LinearLayout>
+
+
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circule_star"
+                            android:src="@drawable/star"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#24282c"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/digiLink"
+                    android:clickable="true"
+                    android:fontFamily="@font/assistant_bold"
+                    android:text="Designed by : TeamDigiCoders"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/assistant_bold"
+                    android:text="Copyright © 2022 All rights reserved | ALEXA MAX ENERGY PVT. L.T.D"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

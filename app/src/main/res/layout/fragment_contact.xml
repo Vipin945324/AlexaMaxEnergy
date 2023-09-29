@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bg_splash"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Contact Us"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardMaxElevation="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:id="@+id/mapOpen"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/ic_baseline_location_on_24"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Address"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#AEAEAE"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="S 298 Shahara shoping centre lekhraj, Indra nagar faizabaad road lucknow. 226016"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_marginHorizontal="10dp"
+                        android:src="@drawable/map_img"
+                        android:layout_marginVertical="10dp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="15dp"
+                app:cardMaxElevation="5dp"
+                app:cardElevation="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/customer_support"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Costumer Care No"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#AEAEAE"
+                                android:textSize="13dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="05224101831"
+                                android:id="@+id/custumerCareC"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_splash"
+                        android:layout_marginVertical="8dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/ic_baseline_phone_24"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Phone Number "
+                                android:layout_marginTop="10dp"
+                                android:textColor="#AEAEAE"
+                                android:textSize="13dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7459048736"
+                                android:id="@+id/callC1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7991478736"
+                                android:id="@+id/callC2"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="9795187907"
+                                android:id="@+id/callC3"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_splash"
+                        android:layout_marginVertical="8dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/ic_baseline_email_24"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Email"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#AEAEAE"
+                                android:textSize="13dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="alexamaxplus@gmail.com"
+                                android:fontFamily="sans-serif-condensed"
+                                android:id="@+id/emailC"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_splash"
+                        android:layout_marginVertical="8dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/llWeb"
+
+                        >
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/world_wide_web"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Website"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#AEAEAE"
+                                android:textSize="13dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="https://alexamaxenergy.com/"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardMaxElevation="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Contact Form"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Our friendly team would love to hear from you!"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_light"
+                        android:textSize="16dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Name"
+                        app:boxStrokeColor="@color/bg_splash"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#24282c"
+                            android:inputType="text"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Number"
+                        app:boxStrokeColor="@color/bg_splash"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Subject"
+                        app:boxStrokeColor="@color/bg_splash"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Message"
+                        app:boxStrokeColor="@color/bg_splash"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:inputType="text"
+                            android:gravity="start"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send Message"
+                        android:layout_gravity="center"
+                        android:textColor="#3d4040"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/bg_splash"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <jahirfiquitiva.libs.fabsmenu.FABsMenuLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        fab:fabs_menu_overlayColor="#4d000000"
+        fab:fabs_menu_clickableOverlay="true"
+        tools:layout_behavior="@string/fabs_menu_layout_behavior">
+
+        <!-- FABs Menu is the main view. It will contain all the items FABs and it create the menu fab itself -->
+        <jahirfiquitiva.libs.fabsmenu.FABsMenu
+            android:id="@+id/fabs_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:clipChildren="false"
+
+            fab:fab_menuMargins="16dp"
+            fab:fab_moreButtonPlusIcon="@drawable/ic_baseline_call_end_24"
+            fab:fab_moreButtonBackgroundColor="@color/bg_splash"
+            fab:fab_moreButtonRippleColor="@color/white"
+            fab:fab_moreButtonSize="normal"
+            fab:fab_labelsPosition="left"
+            fab:fab_expandDirection="up">
+
+            <!-- This is the item that appears at the top of the menu -->
+            <jahirfiquitiva.libs.fabsmenu.TitleFAB
+                android:id="@+id/custumerCare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:srcCompat="@drawable/customer_support"
+                fab:fabSize="mini"
+                app:tint="@color/white"
+                fab:backgroundTint="#FF9100"
+                fab:rippleColor="@color/white"
+                fab:fab_title="Custumer Care"
+                fab:fab_title_backgroundColor="@color/teal_700"
+                fab:fab_title_textColor="@android:color/white"/>
+            <jahirfiquitiva.libs.fabsmenu.TitleFAB
+                android:id="@+id/whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:srcCompat="@drawable/whatsapp"
+                fab:fabSize="mini"
+                app:tint="#fff"
+                fab:backgroundTint="@color/bg_splash"
+                fab:rippleColor="@color/white"
+                fab:fab_title="WhatsApp"
+                fab:fab_title_backgroundColor="@color/teal_700"
+                fab:fab_title_textColor="@android:color/white"/>
+
+            <jahirfiquitiva.libs.fabsmenu.TitleFAB
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:srcCompat="@drawable/ic_baseline_email_24"
+                fab:fabSize="mini"
+                app:tint="#fff"
+                fab:backgroundTint="#3a6da1"
+                fab:rippleColor="@color/white"
+                fab:fab_title="Email"
+                fab:fab_title_backgroundColor="@color/teal_700"
+                fab:fab_title_textColor="@android:color/white"/>
+
+
+
+            <!-- This item will appear just above the menu FAB -->
+            <jahirfiquitiva.libs.fabsmenu.TitleFAB
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#fff"
+                fab:srcCompat="@drawable/ic_baseline_phone_24"
+                fab:fab_title="Call: 7459048736"
+                fab:fabSize="normal"
+                fab:backgroundTint="#00B0FF"
+                fab:rippleColor="@color/white"/>
+
+        </jahirfiquitiva.libs.fabsmenu.FABsMenu>
+
+    </jahirfiquitiva.libs.fabsmenu.FABsMenuLayout>
+
+
+</RelativeLayout>
